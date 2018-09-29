@@ -13,7 +13,7 @@ export class TodoList extends React.Component {
             <div
               key={todo.id}
               id={todo.id}
-              style={{textDecoration: todo.isCompleted ? "line-through" : "none"}}
+              style={{textDecoration: todo.isCompleted ? "line-through black" : "none"}}
               className="list todo-list"
               onClick={() => this.props.toggleCompleted(todo.id)}>
               {todo.text} <br />
